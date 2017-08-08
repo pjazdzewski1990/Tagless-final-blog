@@ -8,5 +8,5 @@ lazy val root = (project in file(".")).
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "Tagless-final-blog",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq(slick, h2, scalaTest % Test)
   )
